@@ -24,7 +24,9 @@ body {
     /* Cor do Tipo Elétrico */
     color: #909190;
     padding: 20px 0;
-    text-align: center;
+    display: flex;
+    place-content: space-between;
+    padding: 20px 30px;
 }
 
 /* --- GRID DE POKÉMON (Uso Obrigatório de Flexbox) --- */
@@ -116,7 +118,52 @@ body {
 
 .navbar nav a:hover {
     background: rgba(255, 255, 255, 0.2);
+
+
 }
+
+/* No seu arquivo ./assets/css/style2.css */
+
+.header {
+    /* **CHAVE:** Transforma o cabeçalho em um container flexível */
+    display: flex; 
+    
+    /* Garante que ele ocupe 100% da largura */
+    width: 100%;
+    
+    /* **CHAVE:** Empurra os itens (h1 e button) para os cantos opostos */
+    justify-content: space-between; 
+    
+    /* Centraliza os itens verticalmente */
+    align-items: center; 
+    
+    /* Espaçamento interno */
+    padding: 15px 20px; 
+    
+    /* Estilos de fundo e texto (ajuste conforme seu design) */
+    background-color: #2c3e50; /* Exemplo de cor de fundo escura */
+    color: white; 
+}
+
+
+#back-button {
+    background-color: #3498db; 
+    color: white; 
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    float: right;
+    flex-shrink: 0; 
+    transition: background-color 0.2s;
+}
+
+#back-button:hover {
+    background-color: #2980b9; 
+}
+
 
 @media (max-width: 600px) {
     .navbar {
@@ -129,3 +176,4 @@ body {
         display: inline-block;
     }
 }
+
