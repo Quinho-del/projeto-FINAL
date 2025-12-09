@@ -1,0 +1,164 @@
+body {
+    background-image: url(../img/fundo.jpg);
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+h1 {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 360px;
+}
+
+h1::before {
+    content: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png');
+    width: 32px;
+    height: 32px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.menu {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 350px;
+    margin: 40px auto;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    padding: 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.botao img {
+    width: 28px;
+    height: 28px;
+}
+
+
+.botao:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.botao.normal {
+    background: #8d8d94;
+}
+
+.botao.fogo {
+    background: #ff5a2b;
+}
+
+.botao.agua {
+    background: #2b8fff;
+}
+
+.botao.eletrico {
+    background: #f4d33b;
+    color: #333;
+}
+
+.botao.grupo {
+    background: #000000;
+    color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    color: #333;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+header {
+    justify-content: center;
+    display: flex;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container .card strong p {
+    background-color: black;
+    color: aliceblue;
+    width: 640px;
+}
+
+.pokemon-card {
+    background-color: white;
+    border: 1px solid #ffcb05;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+
+
+}
+
+.pokemon-card h3 {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color: #0d47a1;
+}
+
+.pokemon-card img {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 10px;
+}
+
+.stats-list {
+    list-style: none;
+    text-align: left;
+    width: 100%;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
