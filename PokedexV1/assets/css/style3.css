@@ -24,7 +24,9 @@ body {
     /* Cor do Tipo Elétrico */
     color: #333;
     padding: 20px 0;
-    text-align: center;
+    display: flex;
+    place-content: space-between;
+    padding: 20px 30px;
 }
 
 /* --- GRID DE POKÉMON (Uso Obrigatório de Flexbox) --- */
@@ -118,6 +120,24 @@ body {
     background: rgba(255, 255, 255, 0.2);
 }
 
+#back-button {
+    background-color: #27292b; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+ 
+    flex-shrink: 0; 
+    transition: background-color 0.2s;
+}
+
+#back-button:hover {
+    background-color: #242729;
+}
+
 @media (max-width: 600px) {
     .navbar {
         flex-direction: column;
@@ -129,3 +149,5 @@ body {
         display: inline-block;
     }
 }
+
+
