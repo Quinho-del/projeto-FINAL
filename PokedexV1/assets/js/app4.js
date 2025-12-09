@@ -23,8 +23,8 @@ function createPokemonCard(pokemon) {
             <li>Peso: ${pokemon.peso} kg</li>
             <li>Altura: ${pokemon.altura} m</li>
             ${abilitiesHtml}
-            <li>Ataque: ${pokemon.ataque}</li>
-            <li>Defesa: ${pokemon.defesa}</li>
+           <li><strong>Ataque: ${pokemon.ataque}</strong></li>
+            <li><strong>Defesa: ${pokemon.defesa}</strong></li>
         </ul>
     `;
     return card;
@@ -95,4 +95,5 @@ async function loadFixedTypePokemons() {
 }
 
 // Inicia o processo quando o HTML termina de carregar
+
 document.addEventListener('DOMContentLoaded', loadFixedTypePokemons);
